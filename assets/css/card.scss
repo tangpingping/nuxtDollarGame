@@ -1,0 +1,122 @@
+@charset "utf-8";
+// pc端
+$size_p: 45.504;
+// 移动端
+$size_m: 16;
+@mixin text{
+  font-size: 12rem/$size_p;
+  position: absolute;
+  bottom: 11rem/$size_p;
+  color: #808080;
+}
+@mixin text_m{
+  font-size: 12rem/$size_m;
+  position: absolute;
+  bottom: 11rem/$size_m;
+  color: #808080;
+}
+@mixin card_p{
+  .card{
+    width: 270rem/$size_p;
+    height: 305rem/$size_p;
+    position: relative;
+    display: inline-block;
+    margin: 25.5rem/$size_p;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 8px 0px rgba(124, 127, 138, 0.8);
+    line-height: 1.4;
+    font-size: 14rem/$size_p;
+    cursor: pointer;
+    img{
+      width: 100%;
+    }
+  }
+  .card_title{
+    margin: 10rem/$size_p 12rem/$size_p;
+    font-size: 16rem/$size_p;
+  }
+  .author{
+    @include text;
+    left: 11rem/$size_p;
+  }
+  .date{
+    @include text;
+    right: 11rem/$size_p;
+  }
+  .status{
+    position: absolute;
+    right: -12rem/$size_p;
+    top: 175rem/$size_p;
+    img{
+      height: 47rem/$size_p;
+      width: 62rem/$size_p;
+    }
+  }
+}
+@mixin card_m{
+  .card{
+    width: 273rem/$size_m;
+    height: 323rem/$size_m;
+    position: relative;
+    display: inline-block;
+    margin: 28rem/$size_m;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 8px 0px rgba(124, 127, 138, 0.8);
+    line-height: 1.4;
+    font-size: 14rem/$size_m;
+    cursor: pointer;
+    img{
+      width: 100%;
+    }
+  }
+  .card_title{
+    margin: 10rem/$size_m 12rem/$size_m;
+    font-size: 16rem/$size_m;
+    float: left;
+  }
+  .author{
+    @include text_m;
+    left: 11rem/$size_m;
+  }
+  .date{
+    @include text_m;
+    right: 11rem/$size_m;
+  }
+  .status{
+    position: absolute;
+    right: -11rem/$size_m;
+    top: 175rem/$size_m;
+    img{
+      height: 50rem/$size_m;
+      width: 65rem/$size_m;
+    }
+  }
+}
+
+/*媒体查询 头部样式*/
+/*以下两个为pc端的-------------------------------开始-------------------start---------------------------------------*/
+@media screen and (min-width: 1200px) {
+  /* width>1200px */
+  @include card_p;
+}
+@media screen and (min-width: 980px) and (max-width: 1199px){
+  /* 980px<width<1199px */
+  @include card_p;
+}
+/*pc端的媒体查询样式结束----------------------------------------------结束-------end----------------------*/
+
+/*以下为移动端的样式 以上为pc 和 平板的样式  750px--------------------------移动端开始--------start----------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 979px){
+  /* 768px<width<979px */
+  @include card_m;
+}
+@media screen and (max-width: 767px){
+  /* width<767px */
+  @include card_m;
+}
+@media screen and (max-width: 480px){
+  /* width<480px */
+  @include card_m;
+}
+/*------------------------------移动端媒体查询结束----------------------------------------------------------结束----end------------------------*/
+

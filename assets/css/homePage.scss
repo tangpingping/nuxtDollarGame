@@ -1,0 +1,166 @@
+@charset "utf-8";
+// pc端
+$size_p: 45.504;
+// 移动端
+$size_m: 16;
+
+#content{
+  text-align: center;
+  .bg{
+    width: 100%;
+    //height: 100%;
+  }
+  .box{
+    //width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+@mixin code{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 590rem/$size_p;
+  left: 700rem/$size_p;
+  width: 213rem/$size_p;
+  height: 213rem/$size_p;
+}
+@mixin home_p{
+  .home_m{
+    display: none;
+  }
+  .home_p{
+    line-height: 2;
+  }
+  .box{
+    //height: 965rem/$size_p;
+  }
+  .first{
+    margin-top: 95rem/$size_p;
+  }
+  .android_download{
+    position: absolute;
+    width: 315rem/$size_p;
+    height: 90rem/$size_p;
+    top: 590rem/$size_p;
+    left: 355rem/$size_p;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .iphone_download{
+    position: absolute;
+    width: 315rem/$size_p;
+    height: 90rem/$size_p;
+    top: 720rem/$size_p;
+    left: 355rem/$size_p;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .android_code{
+    @include code
+  }
+  .iphone_code{
+    @include code
+  }
+  div.first_text{
+    width: 100%;
+    font-size: 48rem/$size_p;
+    font-weight: lighter;
+    letter-spacing: 24rem/$size_p;
+    color: #333333;
+    position: absolute;
+    top: 975rem/$size_p;
+  }
+  .text{
+    text-align: right;
+    position: absolute;
+    top: 670rem/$size_p;
+    left: 1220rem/$size_p;
+    width: 495rem/$size_p;
+  }
+  .text_left{
+    text-align: left;
+    position: absolute;
+    top: 670rem/$size_p;
+    left: 390rem/$size_p;
+    width: 520rem/$size_p;
+  }
+  .title{
+    font-size: 72rem/$size_p;
+    font-weight: bolder;
+    letter-spacing: 8rem/$size_p;
+    .text_color{
+      color: #429aeb;
+    }
+  }
+  .english_title{
+    font-size: 26rem/$size_p;
+    font-weight: lighter;
+    color: #333;
+  }
+  .content_text{
+    font-size: 26rem/$size_p;
+    font-weight: lighter;
+    color: #333;
+  }
+  .top{
+    position: absolute;
+    right: 34rem/$size_p;
+    bottom: -120rem/$size_p;
+    cursor: pointer;
+    width: 64rem/$size_p;
+    height: 79rem/$size_p;
+  }
+}
+@mixin home_m{
+  .home_p{
+    display: none;
+  }
+  .first{
+    margin-top: 95rem/$size_m;
+  }
+  .btn_download{
+    text-align: center;
+    position: absolute;
+    top: 1000rem/$size_m;
+    left: 50%;
+    margin-left: -140rem/$size_m;
+    img{
+      width: 280rem/$size_m;
+      height: 120rem/$size_m;
+    }
+  }
+  .top{
+    position: absolute;
+    right: 38rem/$size_m;
+    bottom: -45rem/$size_m;
+    z-index: 1;
+    width: 65rem/$size_m;
+    height: 101rem/$size_m;
+  }
+}
+/*以下两个为pc端的-------------------------------开始-------------------start---------------------------------------*/
+@media screen and (min-width: 1200px) {
+  /* width>1200px */
+  @include home_p;
+}
+@media screen and (min-width: 980px) and (max-width: 1199px){
+  /* 980px<width<1199px */
+  @include home_p;
+}
+/*pc端的媒体查询样式结束----------------------------------------------结束-------end----------------------*/
+
+/*以下为移动端的样式 以上为pc 和 平板的样式  750px--------------------------移动端开始--------start----------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 979px){
+  /* 768px<width<979px */
+  @include home_m;
+}
+@media screen and (max-width: 767px){
+  /* width<767px */
+  @include home_m;
+}
+@media screen and (max-width: 480px){
+  /* width<480px */
+  @include home_m;
+}
+/*------------------------------移动端媒体查询结束----------------------------------------------------------结束----end------------------------*/

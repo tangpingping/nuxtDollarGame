@@ -1,0 +1,392 @@
+@charset "UTF-8";
+/*媒体查询 头部样式*/
+/*以下两个为pc端的-------------------------------开始-------------------start---------------------------------------*/
+@media screen and (min-width: 1200px) {
+  /* width>1200px */
+  .content_dynamic {
+    width: 100%;
+    background: url("~assets/image/pc/dynamic_bg.png") no-repeat;
+    background-size: contain;
+    padding: 1.538326301rem 0;
+    margin-top: 2.0877285513rem; }
+
+  .dynamic {
+    margin: 0 auto;
+    margin-bottom: 1.538326301rem;
+    width: 29.667721519rem;
+    background-color: white;
+    padding: 0.6592827004rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgba(124, 127, 138, 0.4); }
+
+  .title {
+    margin-bottom: 0.4395218003rem;
+    padding: 0 0 0.4395218003rem 0.4395218003rem;
+    border-bottom: solid 1px #b3b3b3;
+    width: 100%;
+    box-sizing: border-box; }
+
+  .title_head {
+    margin-bottom: 0.6592827004rem; }
+
+  .title_head a:hover {
+    color: #429aeb; }
+
+  .title_body {
+    font-size: 0.3955696203rem;
+    color: #808080; }
+    .title_body a {
+      color: #808080;
+      text-decoration: none; }
+
+  .date {
+    float: right; }
+
+  .title li {
+    display: inline-block;
+    font-size: 0.5274261603rem;
+    margin-right: 0.9889240506rem; }
+
+  .text_color {
+    color: #429aeb; }
+
+  /*------------------------分页------------------*/
+  .page {
+    width: 100%;
+    height: 0.8790436006rem;
+    text-align: center;
+    margin-top: 0.6592827004rem;
+    color: #429aeb; }
+
+  .pre, .next {
+    display: inline-block;
+    width: 1.8679676512rem;
+    height: 0.7691631505rem;
+    border-radius: 0.3735935302rem;
+    border: solid 0.04395218rem #429aeb;
+    color: #429aeb;
+    font-size: 0.3516174402rem;
+    line-height: 0.7032348805rem;
+    cursor: pointer; }
+
+  .pre:hover, .next:hover {
+    color: white;
+    background-color: #44a9fc;
+    transition: all 0.5s; }
+
+  .page_size {
+    margin: 0 0.7032348805rem; } }
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  /* 980px<width<1199px */
+  .content_dynamic {
+    width: 100%;
+    background: url("~assets/image/pc/dynamic_bg.png") no-repeat;
+    background-size: contain;
+    padding: 1.538326301rem 0;
+    margin-top: 2.0877285513rem; }
+
+  .dynamic {
+    margin: 0 auto;
+    margin-bottom: 1.538326301rem;
+    width: 29.667721519rem;
+    background-color: white;
+    padding: 0.6592827004rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgba(124, 127, 138, 0.4); }
+
+  .title {
+    margin-bottom: 0.4395218003rem;
+    padding: 0 0 0.4395218003rem 0.4395218003rem;
+    border-bottom: solid 1px #b3b3b3;
+    width: 100%;
+    box-sizing: border-box; }
+
+  .title_head {
+    margin-bottom: 0.6592827004rem; }
+
+  .title_head a:hover {
+    color: #429aeb; }
+
+  .title_body {
+    font-size: 0.3955696203rem;
+    color: #808080; }
+    .title_body a {
+      color: #808080;
+      text-decoration: none; }
+
+  .date {
+    float: right; }
+
+  .title li {
+    display: inline-block;
+    font-size: 0.5274261603rem;
+    margin-right: 0.9889240506rem; }
+
+  .text_color {
+    color: #429aeb; }
+
+  /*------------------------分页------------------*/
+  .page {
+    width: 100%;
+    height: 0.8790436006rem;
+    text-align: center;
+    margin-top: 0.6592827004rem;
+    color: #429aeb; }
+
+  .pre, .next {
+    display: inline-block;
+    width: 1.8679676512rem;
+    height: 0.7691631505rem;
+    border-radius: 0.3735935302rem;
+    border: solid 0.04395218rem #429aeb;
+    color: #429aeb;
+    font-size: 0.3516174402rem;
+    line-height: 0.7032348805rem;
+    cursor: pointer; }
+
+  .pre:hover, .next:hover {
+    color: white;
+    background-color: #44a9fc;
+    transition: all 0.5s; }
+
+  .page_size {
+    margin: 0 0.7032348805rem; } }
+/*pc端的媒体查询样式结束----------------------------------------------结束-------end----------------------*/
+/*以下为移动端的样式 以上为pc 和 平板的样式  750px--------------------------移动端开始--------start----------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  /* 768px<width<979px */
+  .content_dynamic {
+    width: 100%;
+    background: url("/assets/image/pc/dynamic_bg.png") no-repeat;
+    background-size: contain;
+    padding-top: 4.375rem;
+    margin-top: 5.9375rem; }
+
+  .dynamic {
+    margin: 0 auto;
+    margin-bottom: 4.375rem;
+    width: 100%;
+    background-color: white;
+    padding: 1.875rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgba(124, 127, 138, 0.4);
+    text-align: center; }
+
+  .title {
+    margin-bottom: 1.25rem;
+    padding: 0 0 1.25rem 1.25rem;
+    border-bottom: solid 1px #b3b3b3;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left; }
+
+  .title_head {
+    margin-bottom: 1.875rem; }
+
+  .title_head a:hover {
+    color: #429aeb; }
+
+  .title_body {
+    font-size: 1.25rem;
+    color: #808080; }
+    .title_body a {
+      color: #808080;
+      text-decoration: none; }
+
+  .date {
+    float: right; }
+
+  .title li {
+    display: inline-block;
+    font-size: 1.875rem;
+    margin-right: 2.8125rem; }
+
+  .text_color {
+    color: #429aeb; }
+
+  /*------------------------分页------------------*/
+  .page {
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    margin-top: 1.875rem;
+    color: #429aeb; }
+
+  .pre, .next {
+    display: inline-block;
+    width: 5.3125rem;
+    height: 2.1875rem;
+    border-radius: 1.0625rem;
+    border: solid 0.125rem #429aeb;
+    color: #429aeb;
+    font-size: 1rem;
+    line-height: 2rem;
+    cursor: pointer; }
+
+  .pre:hover, .next:hover {
+    color: white;
+    background-color: #44a9fc;
+    transition: all 0.5s; }
+
+  .page_size {
+    margin: 0 2rem;
+    font-size: 0.875rem; } }
+@media screen and (max-width: 767px) {
+  /* width<767px */
+  .content_dynamic {
+    width: 100%;
+    background: url("/assets/image/pc/dynamic_bg.png") no-repeat;
+    background-size: contain;
+    padding-top: 4.375rem;
+    margin-top: 5.9375rem; }
+
+  .dynamic {
+    margin: 0 auto;
+    margin-bottom: 4.375rem;
+    width: 100%;
+    background-color: white;
+    padding: 1.875rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgba(124, 127, 138, 0.4);
+    text-align: center; }
+
+  .title {
+    margin-bottom: 1.25rem;
+    padding: 0 0 1.25rem 1.25rem;
+    border-bottom: solid 1px #b3b3b3;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left; }
+
+  .title_head {
+    margin-bottom: 1.875rem; }
+
+  .title_head a:hover {
+    color: #429aeb; }
+
+  .title_body {
+    font-size: 1.25rem;
+    color: #808080; }
+    .title_body a {
+      color: #808080;
+      text-decoration: none; }
+
+  .date {
+    float: right; }
+
+  .title li {
+    display: inline-block;
+    font-size: 1.875rem;
+    margin-right: 2.8125rem; }
+
+  .text_color {
+    color: #429aeb; }
+
+  /*------------------------分页------------------*/
+  .page {
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    margin-top: 1.875rem;
+    color: #429aeb; }
+
+  .pre, .next {
+    display: inline-block;
+    width: 5.3125rem;
+    height: 2.1875rem;
+    border-radius: 1.0625rem;
+    border: solid 0.125rem #429aeb;
+    color: #429aeb;
+    font-size: 1rem;
+    line-height: 2rem;
+    cursor: pointer; }
+
+  .pre:hover, .next:hover {
+    color: white;
+    background-color: #44a9fc;
+    transition: all 0.5s; }
+
+  .page_size {
+    margin: 0 2rem;
+    font-size: 0.875rem; } }
+@media screen and (max-width: 480px) {
+  /* width<480px */
+  .content_dynamic {
+    width: 100%;
+    background: url("/assets/image/pc/dynamic_bg.png") no-repeat;
+    background-size: contain;
+    padding-top: 4.375rem;
+    margin-top: 5.9375rem; }
+
+  .dynamic {
+    margin: 0 auto;
+    margin-bottom: 4.375rem;
+    width: 100%;
+    background-color: white;
+    padding: 1.875rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgba(124, 127, 138, 0.4);
+    text-align: center; }
+
+  .title {
+    margin-bottom: 1.25rem;
+    padding: 0 0 1.25rem 1.25rem;
+    border-bottom: solid 1px #b3b3b3;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left; }
+
+  .title_head {
+    margin-bottom: 1.875rem; }
+
+  .title_head a:hover {
+    color: #429aeb; }
+
+  .title_body {
+    font-size: 1.25rem;
+    color: #808080; }
+    .title_body a {
+      color: #808080;
+      text-decoration: none; }
+
+  .date {
+    float: right; }
+
+  .title li {
+    display: inline-block;
+    font-size: 1.875rem;
+    margin-right: 2.8125rem; }
+
+  .text_color {
+    color: #429aeb; }
+
+  /*------------------------分页------------------*/
+  .page {
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    margin-top: 1.875rem;
+    color: #429aeb; }
+
+  .pre, .next {
+    display: inline-block;
+    width: 5.3125rem;
+    height: 2.1875rem;
+    border-radius: 1.0625rem;
+    border: solid 0.125rem #429aeb;
+    color: #429aeb;
+    font-size: 1rem;
+    line-height: 2rem;
+    cursor: pointer; }
+
+  .pre:hover, .next:hover {
+    color: white;
+    background-color: #44a9fc;
+    transition: all 0.5s; }
+
+  .page_size {
+    margin: 0 2rem;
+    font-size: 0.875rem; } }
+/*------------------------------移动端媒体查询结束----------------------------------------------------------结束----end------------------------*/
+
+/*# sourceMappingURL=dynamic.css.map */

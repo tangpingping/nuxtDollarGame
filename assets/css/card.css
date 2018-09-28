@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/*媒体查询 头部样式*/
+/*以下两个为pc端的-------------------------------开始-------------------start---------------------------------------*/
+@media screen and (min-width: 1200px) {
+  /* width>1200px */
+  .card {
+    width: 5.9335443038rem;
+    height: 6.7027074543rem;
+    position: relative;
+    display: inline-block;
+    margin: 0.5603902954rem;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 8px 0px rgba(124, 127, 138, 0.8);
+    line-height: 1.4;
+    font-size: 0.3076652602rem;
+    cursor: pointer; }
+    .card img {
+      width: 100%; }
+
+  .card_title {
+    margin: 0.2197609001rem 0.2637130802rem;
+    font-size: 0.3516174402rem; }
+
+  .author {
+    font-size: 0.2637130802rem;
+    position: absolute;
+    bottom: 0.2417369902rem;
+    color: #808080;
+    left: 0.2417369902rem; }
+
+  .date {
+    font-size: 0.2637130802rem;
+    position: absolute;
+    bottom: 0.2417369902rem;
+    color: #808080;
+    right: 0.2417369902rem; }
+
+  .status {
+    position: absolute;
+    right: -0.2637130802rem;
+    top: 3.8458157525rem; }
+    .status img {
+      height: 1.0328762307rem;
+      width: 1.3625175809rem; } }
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  /* 980px<width<1199px */
+  .card {
+    width: 5.9335443038rem;
+    height: 6.7027074543rem;
+    position: relative;
+    display: inline-block;
+    margin: 0.5603902954rem;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 8px 0px rgba(124, 127, 138, 0.8);
+    line-height: 1.4;
+    font-size: 0.3076652602rem;
+    cursor: pointer; }
+    .card img {
+      width: 100%; }
+
+  .card_title {
+    margin: 0.2197609001rem 0.2637130802rem;
+    font-size: 0.3516174402rem; }
+
+  .author {
+    font-size: 0.2637130802rem;
+    position: absolute;
+    bottom: 0.2417369902rem;
+    color: #808080;
+    left: 0.2417369902rem; }
+
+  .date {
+    font-size: 0.2637130802rem;
+    position: absolute;
+    bottom: 0.2417369902rem;
+    color: #808080;
+    right: 0.2417369902rem; }
+
+  .status {
+    position: absolute;
+    right: -0.2637130802rem;
+    top: 3.8458157525rem; }
+    .status img {
+      height: 1.0328762307rem;
+      width: 1.3625175809rem; } }
+/*pc端的媒体查询样式结束----------------------------------------------结束-------end----------------------*/
+/*以下为移动端的样式 以上为pc 和 平板的样式  750px--------------------------移动端开始--------start----------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  /* 768px<width<979px */
+  .card {
+    width: 17.0625rem;
+    height: 20.1875rem;
+    position: relative;
+    display: inline-block;
+    margin: 1.75rem;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 8px 0px rgba(124, 127, 138, 0.8);
+    line-height: 1.4;
+    font-size: 0.875rem;
+    cursor: pointer; }
+    .card img {
+      width: 100%; }
+
+  .card_title {
+    margin: 0.625rem 0.75rem;
+    font-size: 1rem;
+    float: left; }
+
+  .author {
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 0.6875rem;
+    color: #808080;
+    left: 0.6875rem; }
+
+  .date {
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 0.6875rem;
+    color: #808080;
+    right: 0.6875rem; }
+
+  .status {
+    position: absolute;
+    right: -0.6875rem;
+    top: 10.9375rem; }
+    .status img {
+      height: 3.125rem;
+      width: 4.0625rem; } }
+@media screen and (max-width: 767px) {
+  /* width<767px */
+  .card {
+    width: 17.0625rem;
+    height: 20.1875rem;
+    position: relative;
+    display: inline-block;
+    margin: 1.75rem;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 8px 0px rgba(124, 127, 138, 0.8);
+    line-height: 1.4;
+    font-size: 0.875rem;
+    cursor: pointer; }
+    .card img {
+      width: 100%; }
+
+  .card_title {
+    margin: 0.625rem 0.75rem;
+    font-size: 1rem;
+    float: left; }
+
+  .author {
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 0.6875rem;
+    color: #808080;
+    left: 0.6875rem; }
+
+  .date {
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 0.6875rem;
+    color: #808080;
+    right: 0.6875rem; }
+
+  .status {
+    position: absolute;
+    right: -0.6875rem;
+    top: 10.9375rem; }
+    .status img {
+      height: 3.125rem;
+      width: 4.0625rem; } }
+@media screen and (max-width: 480px) {
+  /* width<480px */
+  .card {
+    width: 17.0625rem;
+    height: 20.1875rem;
+    position: relative;
+    display: inline-block;
+    margin: 1.75rem;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 8px 0px rgba(124, 127, 138, 0.8);
+    line-height: 1.4;
+    font-size: 0.875rem;
+    cursor: pointer; }
+    .card img {
+      width: 100%; }
+
+  .card_title {
+    margin: 0.625rem 0.75rem;
+    font-size: 1rem;
+    float: left; }
+
+  .author {
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 0.6875rem;
+    color: #808080;
+    left: 0.6875rem; }
+
+  .date {
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 0.6875rem;
+    color: #808080;
+    right: 0.6875rem; }
+
+  .status {
+    position: absolute;
+    right: -0.6875rem;
+    top: 10.9375rem; }
+    .status img {
+      height: 3.125rem;
+      width: 4.0625rem; } }
+/*------------------------------移动端媒体查询结束----------------------------------------------------------结束----end------------------------*/
+
+/*# sourceMappingURL=card.css.map */

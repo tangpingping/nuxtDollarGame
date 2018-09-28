@@ -1,0 +1,189 @@
+@charset "utf-8";
+// pc端
+$size_p: 45.504;
+// 移动端
+$size_m: 16;
+
+@mixin dynamic_p{
+  .content_dynamic {
+    width: 100%;
+    background: url("~assets/image/pc/dynamic_bg.png") no-repeat;
+    background-size: contain;
+    padding: 70rem/$size_p 0;
+    margin-top: 95rem/$size_p;
+  }
+  .dynamic{
+    margin: 0 auto;
+    margin-bottom: 70rem/$size_p;
+    width: 1350rem/$size_p;
+    background-color: white;
+    padding: 30rem/$size_p;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgba(124, 127, 138, 0.4);
+  }
+  .title{
+    margin-bottom: 20rem/$size_p;
+    padding: 0 0 20rem/$size_p 20rem/$size_p;
+    border-bottom: solid 1px #b3b3b3;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .title_head{
+    margin-bottom: 30rem/$size_p;
+  }
+  .title_head a:hover{
+    color: #429aeb;
+  }
+  .title_body{
+    font-size: 18rem/$size_p;
+    color: #808080;
+    a{
+      color: #808080;
+      text-decoration: none;
+    }
+  }
+  .date{
+    float: right;
+  }
+  .title li{
+    display: inline-block;
+    font-size: 24rem/$size_p;
+    margin-right: 45rem/$size_p;
+  }
+  .text_color{
+    color: #429aeb;
+  }
+/*------------------------分页------------------*/
+  .page{
+    width: 100%;
+    height: 40rem/$size_p;
+    text-align: center;
+    margin-top: 30rem/$size_p;
+    color: #429aeb;
+  }
+  .pre, .next{
+    display: inline-block;
+    width: 85rem/$size_p;
+    height: 35rem/$size_p;
+    border-radius: 17rem/$size_p;
+    border: solid 2rem/$size_p #429aeb;
+    color: #429aeb;
+    font-size: 16rem/$size_p;
+    line-height: 32rem/$size_p;
+    cursor: pointer;
+  }
+  .pre:hover, .next:hover{
+    color: white;
+    background-color: #44a9fc;
+    transition: all 0.5s;
+  }
+  .page_size{
+    margin: 0 32rem/$size_p;
+  }
+}
+@mixin dynamic_m{
+  .content_dynamic {
+    width: 100%;
+    background: url("/assets/image/pc/dynamic_bg.png") no-repeat;
+    background-size: contain;
+    padding-top: 70rem/$size_m;
+    margin-top: 95rem/$size_m;
+  }
+  .dynamic{
+    margin: 0 auto;
+    margin-bottom: 70rem/$size_m;
+    width: 100%;
+    background-color: white;
+    padding: 30rem/$size_m;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgba(124, 127, 138, 0.4);
+    text-align: center;
+  }
+  .title{
+    margin-bottom: 20rem/$size_m;
+    padding: 0 0 20rem/$size_m 20rem/$size_m;
+    border-bottom: solid 1px #b3b3b3;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .title_head{
+    margin-bottom: 30rem/$size_m;
+  }
+  .title_head a:hover{
+    color: #429aeb;
+  }
+  .title_body{
+    font-size: 20rem/$size_m;
+    color: #808080;
+    a{
+      color: #808080;
+      text-decoration: none;
+    }
+  }
+  .date{
+    float: right;
+  }
+  .title li{
+    display: inline-block;
+    font-size: 30rem/$size_m;
+    margin-right: 45rem/$size_m;
+  }
+  .text_color{
+    color: #429aeb;
+  }
+  /*------------------------分页------------------*/
+  .page{
+    width: 100%;
+    height: 40rem/$size_m;
+    text-align: center;
+    margin-top: 30rem/$size_m;
+    color: #429aeb;
+  }
+  .pre, .next{
+    display: inline-block;
+    width: 85rem/$size_m;
+    height: 35rem/$size_m;
+    border-radius: 17rem/$size_m;
+    border: solid 2rem/$size_m #429aeb;
+    color: #429aeb;
+    font-size: 16rem/$size_m;
+    line-height: 32rem/$size_m;
+    cursor: pointer;
+  }
+  .pre:hover, .next:hover{
+    color: white;
+    background-color: #44a9fc;
+    transition: all 0.5s;
+  }
+  .page_size{
+    margin: 0 32rem/$size_m;
+    font-size: 14rem/$size_m;
+  }
+}
+/*媒体查询 头部样式*/
+/*以下两个为pc端的-------------------------------开始-------------------start---------------------------------------*/
+@media screen and (min-width: 1200px) {
+  /* width>1200px */
+  @include dynamic_p;
+}
+@media screen and (min-width: 980px) and (max-width: 1199px){
+  /* 980px<width<1199px */
+  @include dynamic_p;
+}
+/*pc端的媒体查询样式结束----------------------------------------------结束-------end----------------------*/
+
+/*以下为移动端的样式 以上为pc 和 平板的样式  750px--------------------------移动端开始--------start----------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 979px){
+  /* 768px<width<979px */
+  @include dynamic_m;
+}
+@media screen and (max-width: 767px){
+  /* width<767px */
+  @include dynamic_m;
+}
+@media screen and (max-width: 480px){
+  /* width<480px */
+  @include dynamic_m;
+}
+/*------------------------------移动端媒体查询结束----------------------------------------------------------结束----end------------------------*/

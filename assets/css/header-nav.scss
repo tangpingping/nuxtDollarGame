@@ -1,0 +1,123 @@
+@charset "utf-8";
+// pc端
+$size_p: 45.504;
+// 移动端
+$size_m: 16;
+// 函数变量 pc样式 官网 45.504px
+.nav{
+  width: 100%;
+  box-sizing: border-box;
+  height: 95rem/$size_p;
+  background: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  border-bottom: solid 1rem/$size_p rgba(217, 215, 214, 0.8);
+  box-shadow: 10px 0 100px rgba(0, 0, 0, 0.3);
+}
+@mixin nav_P{
+  .nav-p{
+    width: 1400rem/$size_p;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 95rem/$size_p;
+    box-sizing: border-box;
+    line-height: 95rem/$size_p;
+  }
+  .nav-p img{
+    margin-top:0.21976rem;
+    width: 320rem/$size_p;
+    height: 72rem/$size_p;
+  }
+  .nav-p-right{
+    text-align: right;
+    display: inline-block;
+    width: 700rem/$size_p;
+    float: right;
+  }
+  .nav-p-right li{
+    display: inline-block;
+    margin-left: 60rem/$size_p;
+    font-size: 24rem/$size_p;
+  }
+  .nav-p-right a:hover{
+    color: #429aeb;
+  }
+  .nav-m{
+    display: none;
+  }
+}
+// 移动端的样式 16px
+@mixin nav_m{
+  .nav-p{
+    display: none;
+  }
+  .nav-m{
+    //padding: 0 3.0666667%;
+    height: 95rem/$size_m;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+  }
+  .nav-m .nav-m-left img{
+    width: 283rem/$size_m;
+    height: 60rem/$size_m;
+    float: left;
+    margin-top: 20rem/$size_m;
+    margin-left: 3.0666667%;
+  }
+  .nav-m .nav-m-right img, .close img{
+    width: 43rem/$size_m;
+    height: 41rem/$size_m;
+    float: right;
+    margin-top: 30rem/$size_m;
+    margin-right: 3.0666667%;
+  }
+  .menu-extend{
+    margin-top: 95rem/$size_m;
+    padding: 55rem/$size_m 0;
+    width: 100%;
+    background: white;
+  }
+  .menu-extend li{
+    display: inline-block;
+    margin-left: 100rem/$size_m;
+  }
+  .menu-extend li:first-child{
+    margin-left: 25rem/$size_m;
+  }
+  .menu-extend img{
+    width: 90rem/$size_m;
+    height: 90rem/$size_m;
+  }
+}
+/*媒体查询 头部样式*/
+/*以下两个为pc端的-------------------------------开始-------------------start---------------------------------------*/
+@media screen and (min-width: 1200px) {
+    /* width>1200px */
+    @include nav_P;
+}
+@media screen and (min-width: 980px) and (max-width: 1199px){
+    /* 980px<width<1199px */
+    @include nav_P;
+}
+/*pc端的媒体查询样式结束----------------------------------------------结束-------end----------------------*/
+
+/*以下为移动端的样式 以上为pc 和 平板的样式  750px--------------------------移动端开始--------start----------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 979px){
+    /* 768px<width<979px */
+    @include nav_m;
+}
+@media screen and (max-width: 767px){
+    /* width<767px */
+     @include nav_m;
+}
+@media screen and (max-width: 480px){
+    /* width<480px */
+     @include nav_m;
+}
+/*------------------------------移动端媒体查询结束----------------------------------------------------------结束----end------------------------*/
